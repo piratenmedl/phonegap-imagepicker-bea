@@ -1,4 +1,4 @@
-snw-cordova-imagePicker
+sz-cordova-imagePicker
 =======================
 
 ```
