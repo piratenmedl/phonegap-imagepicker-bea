@@ -1,5 +1,5 @@
 {
-  "name": "snw-cordova-imagePicker",
+  "name": "sz-cordova-image-picker",
   "version": "1.0.6",
   "description": "\r\n\t\tThis plugin allows selection of multiple images from the camera roll / gallery in a phonegap app\r\n\t",
   "cordova": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandrozbinden/snw-cordova-imagePicker.git"
+    "url": "git+https://github.com/sandrozbinden/sz-cordova-imagePicker.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -27,7 +27,7 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sandrozbinden/snw-cordova-imagePicker/issues"
+    "url": "https://github.com/sandrozbinden/sz-cordova-imagePicker/issues"
   },
-  "homepage": "https://github.com/sandrozbinden/snw-cordova-imagePicker#readme"
+  "homepage": "https://github.com/sandrozbinden/sz-cordova-imagePicker#readme"
 }
