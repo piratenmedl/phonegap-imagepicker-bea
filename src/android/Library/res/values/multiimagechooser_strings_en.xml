@@ -3,16 +3,16 @@
     <string name="multi_app_name">MultiImageChooser</string>
     <string name="free_version_label">Free version - Images left: %d</string>
     <string name="error_database">There was an error opening the images database. Please report the problem.</string>
-    <string name="requesting_thumbnails">Requesting thumbnails, please be patient</string>
-    <string name="discard">Cancel</string>
-    <string name="all">All</string>
-    <string name="clear">Clear</string>
+    <string name="requesting_thumbnails">Die Thumbnails werden erstellt, bitte kurz warten ...</string>
+    <string name="discard">Abbrechen</string>
+    <string name="all">Alle auswählen</string>
+    <string name="clear">Auswahl entfernen</string>
     <string name="done">OK</string>
-    <string name="chosen">Chosen: </string>
-    <string name="processing">Processing Images</string>
-    <string name="processing_time">This may take a few moments</string>
-    <string name="max_1">Maximum</string>
-    <string name="max_2">Photos</string>
-    <string name="max_3">You can only select </string>
-    <string name="max_4">photos at a time. You can add more afterward.</string>
+    <string name="chosen">Gewählt: </string>
+    <string name="processing">Die Bilder werden verarbeitet.</string>
+    <string name="processing_time">Das dauert einen kleinen Moment.</string>
+    <string name="max_1">Höchstens</string>
+    <string name="max_2">Fotos</string>
+    <string name="max_3">Du kannst nur gleichzeitig </string>
+    <string name="max_4">Fotos wählen. Du kannst später mehr hinzufügen.</string>
 </resources>
