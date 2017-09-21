@@ -3,11 +3,11 @@
 "Error" = "Fehler";
 "Album Fehler: %@ - %@" = "Album Fehler: %@ - %@";
 "Ok" = "Ok";
-"Okay" = "Perfekt";
+"Okay" = "Ok";
 "Select All" = "Alle auswählen";
 "Deselect All" = "Alle abwählen";
 "Pick Photo" = "Markiere Foto";
 "Pick Photos" = "Markiere Fotos";
-"Chosen: %d" = "Gewählt: %d";
-"Maximum %d photos." = "Höchstens %d Fotos.";
-"You can only select %d photos at a time." = "Du kannst nur %d Fotos gleichzeitig wählen.";
+"Chosen: %d" = "Ausgewählt: %d";
+"Maximum %d photos." = "Fertig!";
+"You can only select %d photos at a time." = "Du hast jetzt alle %d Fotos ausgewählt.";

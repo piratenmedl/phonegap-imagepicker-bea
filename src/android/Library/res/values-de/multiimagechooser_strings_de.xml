@@ -8,7 +8,7 @@
     <string name="all">Alle auswählen</string>
     <string name="clear">Auswahl entfernen</string>
     <string name="done">OK</string>
-    <string name="chosen">Gewählt: </string>
+    <string name="chosen">Ausgewählte Fotos: </string>
     <string name="processing">Die Bilder werden verarbeitet.</string>
     <string name="processing_time">Das dauert einen kleinen Moment.</string>
     <string name="max_1">Höchstens</string>
