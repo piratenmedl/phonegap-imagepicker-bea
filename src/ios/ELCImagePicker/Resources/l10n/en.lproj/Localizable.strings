@@ -4,6 +4,7 @@
 "Album Fehler: %@ - %@" = "Album Fehler: %@ - %@";
 "Ok" = "Ok";
 "Okay" = "Perfekt";
+"Done" = "Done";
 "Select All" = "Alle auswählen";
 "Deselect All" = "Alle abwählen";
 "Pick Photo" = "Markiere Foto";
