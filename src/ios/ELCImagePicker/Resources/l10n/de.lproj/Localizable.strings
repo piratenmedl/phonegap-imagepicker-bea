@@ -4,10 +4,12 @@
 "Album Fehler: %@ - %@" = "Album Fehler: %@ - %@";
 "Ok" = "Ok";
 "Okay" = "Ok";
+"Done" = "Fertig";
+"Back" = "Zurück";
 "Select All" = "Alle auswählen";
 "Deselect All" = "Alle abwählen";
-"Pick Photo" = "Markiere Foto";
-"Pick Photos" = "Markiere Fotos";
-"Chosen: %d" = "Ausgewählt: %d";
+"Pick Photo" = "Markiere";
+"Pick Photos" = "Markiere";
+"Chosen: %d" = "Fotos: %d";
 "Maximum %d photos." = "Fertig!";
 "You can only select %d photos at a time." = "Du hast jetzt alle %d Fotos ausgewählt.";
