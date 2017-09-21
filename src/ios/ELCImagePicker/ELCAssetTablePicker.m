@@ -5,6 +5,7 @@
 //  Copyright 2011 ELC Technologies. All rights reserved.
 //
 
+#import "ELCImagePickerController.h"
 #import "ELCAssetTablePicker.h"
 #import "ELCAssetCell.h"
 #import "ELCAsset.h"
@@ -28,6 +29,7 @@
     if (self) {
         //Sets a reasonable default bigger then 0 for columns
         //So that we don't have a divide by 0 scenario
+        self.maximumImagesCount = 50;
         self.columns = 4;
         self.assetPadding = 2;
     }
@@ -178,7 +180,7 @@
 
 - (void)updateCounter
 {
-    [self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
+    [self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]+" von 50"];
 }
 
 - (void)selectAllAction:(id)sender
