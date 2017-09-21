@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="multi_app_name">MultiImageChooser</string>
+    <string name="free_version_label">Free version - Images left: %d</string>
+    <string name="error_database">There was an error opening the images database. Please report the problem.</string>
+    <string name="requesting_thumbnails">Die Thumbnails werden erstellt, bitte kurz warten ...</string>
+    <string name="discard">Abbrechen</string>
+    <string name="all">Alle auswählen</string>
+    <string name="clear">Auswahl entfernen</string>
+    <string name="done">OK</string>
+    <string name="chosen">Gewählt: </string>
+    <string name="processing">Die Bilder werden verarbeitet.</string>
+    <string name="processing_time">Das dauert einen kleinen Moment.</string>
+    <string name="max_1">Höchstens</string>
+    <string name="max_2">Fotos</string>
+    <string name="max_3">Du kannst nur </string>
+    <string name="max_4">Fotos wählen.</string>
+</resources>
