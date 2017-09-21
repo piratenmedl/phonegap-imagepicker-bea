@@ -51,8 +51,7 @@
                                            initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                            target:self
                                            action:@selector(doneAction:)];        
-        //[self.navigationItem setRightBarButtonItem:doneButtonItem];
-        [self.navigationItem setRightBarButtonItem:NSLocalizedString(@"Done", nil)];
+        [self.navigationItem setRightBarButtonItem:doneButtonItem];
         [self.navigationItem setTitle:NSLocalizedString(@"Loading", nil)];
 
         [self.navigationController setToolbarHidden:NO];
