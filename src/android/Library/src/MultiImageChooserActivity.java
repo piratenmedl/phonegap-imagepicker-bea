@@ -908,8 +908,10 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
 
     private void openMaxImagesReachedDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(getString(fakeR.getId("string", "max_1")) + " " + maxImageCount + " " + getString(fakeR.getId("string", "max_2")));
-        builder.setMessage(getString(fakeR.getId("string", "max_3")) + " " + maxImageCount + " " + getString(fakeR.getId("string", "max_4")));
+        //builder.setTitle(getString(fakeR.getId("string", "max_1")) + " " + maxImageCount + " " + getString(fakeR.getId("string", "max_2")));
+        builder.setTitle(getString(fakeR.getId("string", "max_1"));
+        //builder.setMessage(getString(fakeR.getId("string", "max_3")) + " " + maxImageCount + " " + getString(fakeR.getId("string", "max_4")));
+        builder.setMessage(getString(fakeR.getId("string", "max_3"));
         builder.setPositiveButton(getString(fakeR.getId("string", "done")), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
