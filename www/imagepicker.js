@@ -27,7 +27,7 @@ ImagePicker.prototype.getPictures = function(success, fail, options) {
     }
 
     var params = {
-        maximumImagesCount: options.maximumImagesCount ? options.maximumImagesCount : 15,
+        maximumImagesCount: options.maximumImagesCount ? options.maximumImagesCount : 50,
         useOriginal: options.useOriginal ? options.useOriginal : false,
         createThumbnail: options.createThumbnail ? options.createThumbnail : false,
         saveToDataDirectory: options.saveToDataDirectory ? options.saveToDataDirectory : false,
