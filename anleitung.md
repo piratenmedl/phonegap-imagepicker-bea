@@ -6,3 +6,9 @@ ios/ELCImagePicker/SOSPicker.m 28
 ansprechen mit self.total
 in Localizable.strings sind die Platzhalter definiert
 für fehlen an maximumImagesCount orientieren
+
+ios/ELCImagePicker/ELCAssetPablePicker.m 180
+
+ELCAssetTablePicker.m
+DoneButton Text
+

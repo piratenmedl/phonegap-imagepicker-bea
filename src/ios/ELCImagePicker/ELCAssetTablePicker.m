@@ -48,7 +48,8 @@
         
     } else {
         UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc]
-                                           initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                           //initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+										   initWithTitle: NSLocalizedString(@"Done", nil)
                                            target:self
                                            action:@selector(doneAction:)];        
         [self.navigationItem setRightBarButtonItem:doneButtonItem];
