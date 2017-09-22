@@ -28,8 +28,8 @@
     self.width = [[options objectForKey:@"width"] integerValue];
     self.height = [[options objectForKey:@"height"] integerValue];
     self.quality = [[options objectForKey:@"quality"] integerValue];
-    self.vorh = [[options objectForKey:@"vorh"] integerValue];
-    self.total = [[options objectForKey:@"total"] integerValue];
+    //self.vorh = [[options objectForKey:@"vorh"] integerValue];
+    //self.total = [[options objectForKey:@"total"] integerValue];
     
     // Create the an album controller and image picker
     ELCAlbumPickerController *albumController = [[ELCAlbumPickerController alloc] init];
@@ -44,8 +44,8 @@
     
     ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initWithRootViewController:albumController];
     imagePicker.maximumImagesCount = maximumImagesCount;
-    imagePicker.vorh = vorh;
-    imagePicker.total = total;
+    //imagePicker.vorh = vorh;
+    //imagePicker.total = total;
     imagePicker.returnsOriginalImage = 1;
     imagePicker.imagePickerDelegate = self;
     

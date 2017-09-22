@@ -31,11 +31,11 @@ ImagePicker.prototype.getPictures = function(success, fail, options) {
         useOriginal: options.useOriginal ? options.useOriginal : false,
         createThumbnail: options.createThumbnail ? options.createThumbnail : false,
         saveToDataDirectory: options.saveToDataDirectory ? options.saveToDataDirectory : false,
+        total: options.total ? options.total : 50,
+        vorh: options.vorh ? options.vorh : 0,
         width: options.width ? options.width : 0,
         height: options.height ? options.height : 0,
-        quality: options.quality ? options.quality : 100,
-        total: options.total ? options.total : 50,
-        vorh: options.vorh ? options.vorh : 0
+        quality: options.quality ? options.quality : 100
     };
 
     return cordova.exec(success, fail, "ImagePicker", "getPictures", [params]);
