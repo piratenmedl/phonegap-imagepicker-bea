@@ -1,14 +1,17 @@
 neuen Parameter total hinzufügen:
-www/imagepicker.js
-ios/ELCImagePicker/SOSPicker.h
+imagepicker.js
+SOSPicker.h
 
-ios/ELCImagePicker/SOSPicker.m 28
+SOSPicker.m 28
 ansprechen mit self.total
 in Localizable.strings sind die Platzhalter definiert
 für fehlen an maximumImagesCount orientieren
 
-ios/ELCImagePicker/ELCAssetPablePicker.m 180
+ELCAssetTablePicker.m 180
+Chosen:
 
+------------------------------------------------------
+Button ändern:
 ELCAssetTablePicker.m
 DoneButton Text
 
