@@ -20,14 +20,14 @@
 - (void) getPictures:(CDVInvokedUrlCommand *)command {
 	NSDictionary *options = [command.arguments objectAtIndex: 0];
     NSInteger maximumImagesCount = [[options objectForKey:@"maximumImagesCount"] integerValue];
-    NSInteger fehlen = [[options objectForKey:@"fehlen"] integerValue];
+    NSInteger total = [[options objectForKey:@"total"] integerValue];
     self.useOriginal = [[options objectForKey:@"useOriginal"] boolValue];
     self.createThumbnail = [[options objectForKey:@"createThumbnail"] boolValue];
     self.saveToDataDirectory = [[options objectForKey:@"saveToDataDirectory"] boolValue];
     self.width = [[options objectForKey:@"width"] integerValue];
     self.height = [[options objectForKey:@"height"] integerValue];
     self.quality = [[options objectForKey:@"quality"] integerValue];
-    //self.fehlen = [[options objectForKey:@"fehlen"] integerValue];
+    //self.total = [[options objectForKey:@"total"] integerValue];
     
     // Create the an album controller and image picker
     ELCAlbumPickerController *albumController = [[ELCAlbumPickerController alloc] init];
@@ -42,7 +42,7 @@
     
     ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initWithRootViewController:albumController];
     imagePicker.maximumImagesCount = maximumImagesCount;
-    imagePicker.fehlen = fehlen;
+    imagePicker.total = total;
     imagePicker.returnsOriginalImage = 1;
     imagePicker.imagePickerDelegate = self;
     
