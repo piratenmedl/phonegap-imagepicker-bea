@@ -48,8 +48,9 @@
         
     } else {
         UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc]
-                                           initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-										   //initWithTitle: NSLocalizedString(@"Done", nil)
+                                           //initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                initWithTitle: NSLocalizedString(@"Done", nil)
+                                style:UIBarButtonItemStylePlain
                                            target:self
                                            action:@selector(doneAction:)];        
         [self.navigationItem setRightBarButtonItem:doneButtonItem];
@@ -108,7 +109,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.columns = self.view.bounds.size.width / 80;
+    //self.columns = self.view.bounds.size.width / 80;
+    self.columns = 4;
     self.assetPadding = 2;
     [self recalculateAssetDimension];
 }
@@ -121,7 +123,8 @@
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-    self.columns = self.view.bounds.size.width / 80;
+    //self.columns = self.view.bounds.size.width / 80;
+    self.columns = 4;
     self.assetPadding = 2;
     [self recalculateAssetDimension];
     [self.tableView reloadData];    

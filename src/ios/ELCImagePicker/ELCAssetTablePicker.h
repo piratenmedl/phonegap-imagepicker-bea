@@ -25,6 +25,7 @@
 @property (nonatomic, strong) UIBarButtonItem *flexSpace;
 @property (nonatomic, strong) UIBarButtonItem *selectionCounterButton;
 @property (nonatomic, strong) UILabel *selectionCounter;
+@property (nonatomic, strong) UIBarButtonItem *doneButton; //bea
 
 // optional, can be used to filter the assets displayed
 @property(nonatomic, weak) id<ELCAssetPickerFilterDelegate> assetPickerFilterDelegate;
