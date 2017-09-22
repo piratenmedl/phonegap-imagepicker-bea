@@ -33,6 +33,7 @@
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc]
 		//initWithBarButtonSystemItem:UIBarButtonSystemItemCancel 
         initWithTitle: NSLocalizedString(@"Cancel", nil)
+        style:UIBarButtonItemStylePlain
 		target:self.parent 
 		action:@selector(cancelImagePicker)];
 	[self.navigationItem setRightBarButtonItem:cancelButton];
