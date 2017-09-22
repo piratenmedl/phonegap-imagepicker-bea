@@ -179,11 +179,11 @@
 - (void)updateCounter
 {
 	
-    NSInteger total = [[options objectForKey:@"total"] integerValue];
-    NSInteger exist = [[options objectForKey:@"exist"] integerValue];
-	self.temp = exist+self.totalSelectedAssets;
-	//[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
-    [self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.temp]];
+    //NSInteger total = [[options objectForKey:@"total"] integerValue];
+    //NSInteger exist = [[options objectForKey:@"exist"] integerValue];
+	//self.temp = exist+self.totalSelectedAssets;
+	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
+    //[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.temp]];
 }
 
 - (void)selectAllAction:(id)sender

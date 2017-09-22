@@ -21,7 +21,7 @@
 	NSDictionary *options = [command.arguments objectAtIndex: 0];
     NSInteger maximumImagesCount = [[options objectForKey:@"maximumImagesCount"] integerValue];
     NSInteger total = [[options objectForKey:@"total"] integerValue];
-    NSInteger exist = [[options objectForKey:@"exist"] integerValue];
+    NSInteger vorh = [[options objectForKey:@"vorh"] integerValue];
     self.useOriginal = [[options objectForKey:@"useOriginal"] boolValue];
     self.createThumbnail = [[options objectForKey:@"createThumbnail"] boolValue];
     self.saveToDataDirectory = [[options objectForKey:@"saveToDataDirectory"] boolValue];
@@ -43,7 +43,7 @@
     
     ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initWithRootViewController:albumController];
     imagePicker.maximumImagesCount = maximumImagesCount;
-    imagePicker.exist = exist;
+    imagePicker.exist = vorh;
     imagePicker.total = total;
     imagePicker.returnsOriginalImage = 1;
     imagePicker.imagePickerDelegate = self;
