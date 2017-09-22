@@ -43,7 +43,7 @@
     
     ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initWithRootViewController:albumController];
     imagePicker.maximumImagesCount = maximumImagesCount;
-    imagePicker.exist = vorh;
+    imagePicker.vorh = vorh;
     imagePicker.total = total;
     imagePicker.returnsOriginalImage = 1;
     imagePicker.imagePickerDelegate = self;
