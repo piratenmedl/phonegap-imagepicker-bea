@@ -180,8 +180,8 @@
 {
 	
     //NSInteger total = [[options objectForKey:@"total"] integerValue];
-    //NSInteger exist = [[options objectForKey:@"exist"] integerValue];
-	//self.temp = exist+self.totalSelectedAssets;
+    //NSInteger vorh = [[options objectForKey:@"vorh"] integerValue];
+	//self.temp = vorh+self.totalSelectedAssets;
 	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
     //[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.temp]];
 }
