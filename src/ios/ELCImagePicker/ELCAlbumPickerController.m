@@ -30,7 +30,11 @@
 	
 	[self.navigationItem setTitle:NSLocalizedString(@"Loading", nil)];
 
-    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self.parent action:@selector(cancelImagePicker)];
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc]
+		//initWithBarButtonSystemItem:UIBarButtonSystemItemCancel 
+        initWithTitle: NSLocalizedString(@"Cancel", nil)
+		target:self.parent 
+		action:@selector(cancelImagePicker)];
 	[self.navigationItem setRightBarButtonItem:cancelButton];
 
     NSMutableArray *tempArray = [[NSMutableArray alloc] init];

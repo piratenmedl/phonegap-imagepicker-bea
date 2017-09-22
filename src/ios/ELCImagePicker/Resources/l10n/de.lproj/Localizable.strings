@@ -1,6 +1,7 @@
 "Select an Album" = "Album wählen";
 "Loading" = "Laden ...";
 "Error" = "Fehler";
+"Cancel" = "Abbrechen";
 "Album Fehler: %@ - %@" = "Album Fehler: %@ - %@";
 "Ok" = "Ok";
 "Okay" = "Ok";
