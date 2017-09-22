@@ -48,8 +48,8 @@
         
     } else {
         UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc]
-                                           //initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-										   initWithTitle: NSLocalizedString(@"Done", nil)
+                                           initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+										   //initWithTitle: NSLocalizedString(@"Done", nil)
                                            target:self
                                            action:@selector(doneAction:)];        
         [self.navigationItem setRightBarButtonItem:doneButtonItem];
@@ -179,11 +179,7 @@
 - (void)updateCounter
 {
 	
-    //NSInteger total = [[options objectForKey:@"total"] integerValue];
-    //NSInteger vorh = [[options objectForKey:@"vorh"] integerValue];
-	//self.temp = vorh+self.totalSelectedAssets;
 	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
-    //[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.temp]];
 }
 
 - (void)selectAllAction:(id)sender
