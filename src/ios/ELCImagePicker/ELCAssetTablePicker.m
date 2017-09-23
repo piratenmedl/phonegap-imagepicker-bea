@@ -15,6 +15,8 @@
 @property (nonatomic, assign) int columns;
 @property (nonatomic, assign) CGFloat assetDimension;
 @property (nonatomic, assign) int assetPadding;
+@property (nonatomic, assign) NSInteger total;
+@property (nonatomic, assign) NSInteger vorh;
 
 @end
 
