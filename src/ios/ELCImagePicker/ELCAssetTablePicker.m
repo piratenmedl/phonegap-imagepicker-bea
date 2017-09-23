@@ -266,8 +266,6 @@
 
 - (void)assetSelected:(ELCAsset *)asset
 {
-    self.vorh = [[options objectForKey:@"vorh"] integerValue];
-    self.total = [[options objectForKey:@"total"] integerValue];
     if (self.singleSelection) {
 
         for (ELCAsset *elcAsset in self.elcAssets) {
