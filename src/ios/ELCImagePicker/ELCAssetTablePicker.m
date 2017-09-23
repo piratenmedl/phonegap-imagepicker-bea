@@ -5,7 +5,6 @@
 //  Copyright 2011 ELC Technologies. All rights reserved.
 //
 
-#import "SOSPicker.h"
 #import "ELCAssetTablePicker.h"
 #import "ELCAssetCell.h"
 #import "ELCAsset.h"
@@ -184,8 +183,8 @@
 
 - (void)updateCounter
 {
-    self.vorh = [[options objectForKey:@"vorh"] integerValue];
-    self.total = [[options objectForKey:@"total"] integerValue];
+    //self.vorh = [[options objectForKey:@"vorh"] integerValue];
+    //self.total = [[options objectForKey:@"total"] integerValue];
 	
 	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
 	//[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.total]];
