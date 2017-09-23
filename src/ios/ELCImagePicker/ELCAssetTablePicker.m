@@ -185,7 +185,7 @@
     //self.total = [[options objectForKey:@"total"] integerValue];
 	
 	//[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
-	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), picker.total]];
+	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.total]];
 }
 
 - (void)selectAllAction:(id)sender
