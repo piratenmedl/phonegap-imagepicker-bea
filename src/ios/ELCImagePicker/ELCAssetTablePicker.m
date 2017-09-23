@@ -184,8 +184,8 @@
     //self.vorh = [[options objectForKey:@"vorh"] integerValue];
     //self.total = [[options objectForKey:@"total"] integerValue];
 	
-	//[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
-	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), _total];
+	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
+	//[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.total]];
 }
 
 - (void)selectAllAction:(id)sender
@@ -266,6 +266,8 @@
 
 - (void)assetSelected:(ELCAsset *)asset
 {
+    self.vorh = [[options objectForKey:@"vorh"] integerValue];
+    self.total = [[options objectForKey:@"total"] integerValue];
     if (self.singleSelection) {
 
         for (ELCAsset *elcAsset in self.elcAssets) {
