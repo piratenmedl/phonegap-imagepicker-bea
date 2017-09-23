@@ -5,6 +5,7 @@
 //  Copyright 2011 ELC Technologies. All rights reserved.
 //
 
+#import "SOSPicker.h"
 #import "ELCAssetTablePicker.h"
 #import "ELCAssetCell.h"
 #import "ELCAsset.h"
