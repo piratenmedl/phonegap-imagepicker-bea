@@ -34,6 +34,7 @@
     // Create the an album controller and image picker
     ELCAlbumPickerController *albumController = [[ELCAlbumPickerController alloc] init];
     
+    albumController.total = 50;
     if (maximumImagesCount == 1) {
         albumController.immediateReturn = true;
         albumController.singleSelection = true;
