@@ -24,14 +24,12 @@
 
 - (id)init
 {
-    //self = [super init];
-    self = [super initWithRootViewController:rootViewController];
+    self = [super init];
     if (self) {
         //Sets a reasonable default bigger then 0 for columns
         //So that we don't have a divide by 0 scenario
         self.columns = 4;
         self.assetPadding = 2;
-        //self.total = 49;
     }
     return self;
 }
