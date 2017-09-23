@@ -37,6 +37,18 @@
     return self;
 }
 
+- (id)initImagePicker
+{
+    ELCAlbumPickerController *albumPicker = [[ELCAlbumPickerController alloc] initWithStyle:UITableViewStylePlain];
+
+    self = [super initWithRootViewController:albumPicker];
+    if (self) {
+        self.total = 49;
+        [albumPicker setParent:self];
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -188,7 +200,7 @@
     //self.total = [[options objectForKey:@"total"] integerValue];
 	
 	//[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
-	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), imagePicker.total]];
+	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.total]];
 }
 
 - (void)selectAllAction:(id)sender
