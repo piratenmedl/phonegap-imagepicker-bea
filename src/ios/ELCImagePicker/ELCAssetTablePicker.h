@@ -26,8 +26,6 @@
 @property (nonatomic, strong) UIBarButtonItem *selectionCounterButton;
 @property (nonatomic, strong) UILabel *selectionCounter;
 @property (nonatomic, strong) UIBarButtonItem *doneButton; //bea
-@property (nonatomic, assign) NSInteger total;
-@property (nonatomic, assign) NSInteger vorh;
 
 // optional, can be used to filter the assets displayed
 @property(nonatomic, weak) id<ELCAssetPickerFilterDelegate> assetPickerFilterDelegate;
