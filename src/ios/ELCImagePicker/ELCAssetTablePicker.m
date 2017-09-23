@@ -70,7 +70,7 @@
         [button addSubview:self.selectionCounter];
         self.selectionCounterButton = [[UIBarButtonItem alloc]
                                            initWithCustomView:button];
-        [self.selectionCounterButton setEnabled:false];
+        [self.selectionCounterButton setEnabled:true];
         
         
         self.selectAllButton = [[UIBarButtonItem alloc]
