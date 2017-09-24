@@ -182,10 +182,10 @@
 - (void)updateCounter
 {
     //bea
-	if (self.vorhImages) 
+	//if (self.vorhImages) 
 		//NSInteger total = self.vorhImages-self.totalSelectedAssets;
-		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d of 50", nil), (self.totalSelectedAssets]];
-	else
+		//[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d of 50", nil), (self.totalSelectedAssets]];
+	//else
 		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d of 50", nil), self.totalSelectedAssets]];
 }
 
