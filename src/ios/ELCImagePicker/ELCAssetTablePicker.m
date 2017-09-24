@@ -183,7 +183,7 @@
 {
     NSNumber *xxx = [asset valueForProperty:@"total"];
 	//[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
-	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.xxx]];
+	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), xxx]];
 }
 
 - (void)selectAllAction:(id)sender
