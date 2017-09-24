@@ -39,13 +39,11 @@
         albumController.immediateReturn = false;
         albumController.singleSelection = false;
     }
-    albumController.totalImages = 50;
-    albumController.vorhImages = vorh;
+        albumController.vorhImages = 15;
+        albumController.totalImages = 50;
    
     ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initWithRootViewController:albumController];
     imagePicker.maximumImagesCount = maximumImagesCount;
-    //imagePicker.vorh = vorh;
-    //imagePicker.total = total;
     imagePicker.returnsOriginalImage = 1;
     imagePicker.imagePickerDelegate = self;
     
