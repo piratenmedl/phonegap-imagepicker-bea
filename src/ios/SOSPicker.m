@@ -20,8 +20,8 @@
 - (void) getPictures:(CDVInvokedUrlCommand *)command {
 	NSDictionary *options = [command.arguments objectAtIndex: 0];
     NSInteger maximumImagesCount = [[options objectForKey:@"maximumImagesCount"] integerValue];
-    NSInteger totalImages = [[options objectForKey:@"total"] integerValue];
-    NSInteger vorhImages = [[options objectForKey:@"vorh"] integerValue];
+    NSInteger total = [[options objectForKey:@"total"] integerValue];
+    NSInteger vorh = [[options objectForKey:@"vorh"] integerValue];
     self.useOriginal = [[options objectForKey:@"useOriginal"] boolValue];
     self.createThumbnail = [[options objectForKey:@"createThumbnail"] boolValue];
     self.saveToDataDirectory = [[options objectForKey:@"saveToDataDirectory"] boolValue];
@@ -41,15 +41,15 @@
         albumController.immediateReturn = false;
         albumController.singleSelection = false;
     }
-    //albumController.vorhImages = 15;
-    //albumController.totalImages = 50;
+    albumController.vorhImages = 15;
+    albumController.totalImages = 50;
    
     ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initWithRootViewController:albumController];
     imagePicker.maximumImagesCount = maximumImagesCount;
     imagePicker.returnsOriginalImage = 1;
     imagePicker.imagePickerDelegate = self;
-    imagePicker.totalImages = totalImages;
-    imagePicker.vorhImages = vorhImages;
+    //imagePicker.totalImages = totalImages;
+    //imagePicker.vorhImages = vorhImages;
    
     albumController.parent = imagePicker;
     self.callbackId = command.callbackId;
