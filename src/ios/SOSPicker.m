@@ -48,8 +48,8 @@
     imagePicker.maximumImagesCount = maximumImagesCount;
     imagePicker.returnsOriginalImage = 1;
     imagePicker.imagePickerDelegate = self;
-    //imagePicker.totalImages = totalImages;
-    //imagePicker.vorhImages = vorhImages;
+    imagePicker.totalImages = totalImages;
+    imagePicker.vorhImages = vorhImages;
    
     albumController.parent = imagePicker;
     self.callbackId = command.callbackId;
