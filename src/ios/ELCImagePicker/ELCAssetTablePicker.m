@@ -181,7 +181,7 @@
 
 - (void)updateCounter
 {
-	self.xxx = [asset valueForProperty:@"total"]
+    NSNumber *xxx = [asset valueForProperty:@"total"];
 	//[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
 	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.xxx]];
 }
