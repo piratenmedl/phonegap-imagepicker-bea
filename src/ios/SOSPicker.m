@@ -28,8 +28,8 @@
     self.width = [[options objectForKey:@"width"] integerValue];
     self.height = [[options objectForKey:@"height"] integerValue];
     self.quality = [[options objectForKey:@"quality"] integerValue];
-    self.vorh = [[options objectForKey:@"width"] integerValue];
-    self.total = [[options objectForKey:@"quality"] integerValue];
+    //self.vorh = [[options objectForKey:@"width"] integerValue];
+    //self.total = [[options objectForKey:@"quality"] integerValue];
     
     // Create the an album controller and image picker
     ELCAlbumPickerController *albumController = [[ELCAlbumPickerController alloc] init];
