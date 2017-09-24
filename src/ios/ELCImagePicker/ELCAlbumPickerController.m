@@ -168,7 +168,9 @@
     
 	picker.assetPickerFilterDelegate = self.assetPickerFilterDelegate;
 	picker.immediateReturn = self.immediateReturn;
-   picker.singleSelection = self.singleSelection;
+    picker.singleSelection = self.singleSelection;
+    picker.totalImages = self.totalImages;
+    picker.vorhImages = self.vorhImages;
 	
 	[self.navigationController pushViewController:picker animated:YES];
 }

@@ -24,7 +24,7 @@
     self = [super initWithRootViewController:albumPicker];
     if (self) {
         self.maximumImagesCount = 4;
-        self.total = 50;
+        //self.total = 50;
         [albumPicker setParent:self];
     }
     return self;
@@ -35,7 +35,7 @@
     self = [super initWithRootViewController:rootViewController];
     if (self) {
         self.maximumImagesCount = 4;
-        self.total = 50;
+        //self.total = 50;
     }
     return self;
 }
