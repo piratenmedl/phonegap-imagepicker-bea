@@ -181,9 +181,11 @@
 
 - (void)updateCounter
 {
-    NSNumber *xxx = [asset valueForProperty:@"total"];
+    if (self.totalImages) 
+		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalImages]];
+	else
+		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
 	//[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
-	[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), xxx]];
 }
 
 - (void)selectAllAction:(id)sender
