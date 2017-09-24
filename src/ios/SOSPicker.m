@@ -20,14 +20,16 @@
 - (void) getPictures:(CDVInvokedUrlCommand *)command {
 	NSDictionary *options = [command.arguments objectAtIndex: 0];
     NSInteger maximumImagesCount = [[options objectForKey:@"maximumImagesCount"] integerValue];
-    NSInteger total = [[options objectForKey:@"total"] integerValue];
-    NSInteger vorh = [[options objectForKey:@"vorh"] integerValue];
+    //NSInteger total = [[options objectForKey:@"total"] integerValue];
+    //NSInteger vorh = [[options objectForKey:@"vorh"] integerValue];
     self.useOriginal = [[options objectForKey:@"useOriginal"] boolValue];
     self.createThumbnail = [[options objectForKey:@"createThumbnail"] boolValue];
     self.saveToDataDirectory = [[options objectForKey:@"saveToDataDirectory"] boolValue];
     self.width = [[options objectForKey:@"width"] integerValue];
     self.height = [[options objectForKey:@"height"] integerValue];
     self.quality = [[options objectForKey:@"quality"] integerValue];
+    self.vorh = [[options objectForKey:@"vorh"] integerValue];
+    self.total = [[options objectForKey:@"total"] integerValue];
     
     // Create the an album controller and image picker
     ELCAlbumPickerController *albumController = [[ELCAlbumPickerController alloc] init];
@@ -39,8 +41,8 @@
         albumController.immediateReturn = false;
         albumController.singleSelection = false;
     }
-        albumController.vorhImages = 15;
-        albumController.totalImages = 50;
+    albumController.vorhImages = 15;
+    albumController.totalImages = 50;
    
     ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initWithRootViewController:albumController];
     imagePicker.maximumImagesCount = maximumImagesCount;
