@@ -186,9 +186,9 @@
     //bea
 	if (self.vorhImages) 
 		//NSInteger fotos = self.vorhImages + self.totalSelectedAssets;
-		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %1 of 50", nil), (self.vorhImages + self.totalSelectedAssets)]];
+		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d of 50", nil), (self.vorhImages + self.totalSelectedAssets)]];
 	else
-		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %1 of 50", nil), self.totalSelectedAssets]];
+		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d of 50", nil), self.totalSelectedAssets]];
 }
 
 - (void)selectAllAction:(id)sender
