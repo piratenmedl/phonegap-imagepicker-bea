@@ -61,13 +61,14 @@
                                                                        target:nil
                                                                        action:nil];
         //self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
-        self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 180, self.navigationController.toolbar.frame.size.height)];
+        self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 180, self.navigationController.toolbar.frame.size.height)]; //bea
         [self.selectionCounter setTextAlignment:NSTextAlignmentRight];
         [self.selectionCounter setTextColor:[UIColor grayColor]];
         [self updateCounter];
         
         UIButton *button =  [UIButton buttonWithType:UIButtonTypeSystem];
-        [button setFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
+        //[button setFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
+        [button setFrame:CGRectMake(0, 0, 180, self.navigationController.toolbar.frame.size.height)];
         [button addSubview:self.selectionCounter];
         self.selectionCounterButton = [[UIBarButtonItem alloc]
                                            initWithCustomView:button];
