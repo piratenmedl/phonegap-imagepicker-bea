@@ -60,7 +60,8 @@
         self.flexSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                                                        target:nil
                                                                        action:nil];
-        self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
+        //self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
+        self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 180, self.navigationController.toolbar.frame.size.height)];
         [self.selectionCounter setTextAlignment:NSTextAlignmentRight];
         [self.selectionCounter setTextColor:[UIColor grayColor]];
         [self updateCounter];
