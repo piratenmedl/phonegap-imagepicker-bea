@@ -12,6 +12,6 @@
 "Deselect All" = "Alle abwählen";
 "Pick Photo" = "Markiere";
 "Pick Photos" = "Markiere";
-"Chosen: %@ of %@" = "Gewählte Fotos: %@ von %@";
+"Chosen: %1 of %2" = "Gewählte Fotos: %1 von %2";
 "Maximum %d photos." = "Fertig!";
 "You can only select %d photos at a time." = "Du hast jetzt alle Fotos ausgewählt.";
