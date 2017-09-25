@@ -61,14 +61,14 @@
                                                                        target:nil
                                                                        action:nil];
         //self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
-        self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 180, self.navigationController.toolbar.frame.size.height)]; //bea
+        self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, self.navigationController.toolbar.frame.size.height)]; //bea
         [self.selectionCounter setTextAlignment:NSTextAlignmentRight];
         [self.selectionCounter setTextColor:[UIColor grayColor]];
         [self updateCounter];
         
         UIButton *button =  [UIButton buttonWithType:UIButtonTypeSystem];
         //[button setFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
-        [button setFrame:CGRectMake(0, 0, 180, self.navigationController.toolbar.frame.size.height)];
+        [button setFrame:CGRectMake(0, 0, 200, self.navigationController.toolbar.frame.size.height)];
         [button addSubview:self.selectionCounter];
         self.selectionCounterButton = [[UIBarButtonItem alloc]
                                            initWithCustomView:button];
@@ -186,9 +186,9 @@
     //bea
 	if (self.vorhImages) 
 		//NSInteger fotos = self.vorhImages + self.totalSelectedAssets;
-		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %1 of %2", nil), (self.vorhImages + self.totalSelectedAssets), self.totalImages]];
+		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %1 of 50", nil), (self.vorhImages + self.totalSelectedAssets)]];
 	else
-		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %1 of %2", nil), self.totalSelectedAssets, self.totalImages]];
+		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %1 of 50", nil), self.totalSelectedAssets]];
 }
 
 - (void)selectAllAction:(id)sender
