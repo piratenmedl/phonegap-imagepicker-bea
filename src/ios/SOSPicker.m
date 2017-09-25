@@ -41,7 +41,8 @@
         albumController.immediateReturn = false;
         albumController.singleSelection = false;
     }
-    albumController.vorhImages = vorh;
+    //bea
+	albumController.vorhImages = vorh;
     albumController.totalImages = total;
    
     ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initWithRootViewController:albumController];

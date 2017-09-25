@@ -17,8 +17,8 @@
 @property (nonatomic, assign) BOOL singleSelection;
 @property (nonatomic, assign) BOOL immediateReturn;
 @property (nonatomic, strong) UIBarButtonItem *cancelButton; //bea
-@property (nonatomic, assign) NSInteger totalImages;
-@property (nonatomic, assign) NSInteger vorhImages;
+@property (nonatomic, assign) NSInteger totalImages; //bea
+@property (nonatomic, assign) NSInteger vorhImages; //bea
 
 // optional, can be used to filter the assets displayed
 @property (nonatomic, weak) id<ELCAssetPickerFilterDelegate> assetPickerFilterDelegate;
