@@ -183,7 +183,7 @@
 {
     //bea
 	if (self.vorhImages) 
-		NSInteger fotos = self.vorhImages-self+totalSelectedAssets;
+		NSInteger fotos = self.vorhImages + self.totalSelectedAssets;
 		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), fotos]];
 	else
 		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
