@@ -94,7 +94,7 @@
 - (void)loadView {
     [super loadView];
     UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    activityIndicator.frame = CGRectMake(0, 0, 200, 200);
+    activityIndicator.frame = CGRectMake(0, 0, 120, 120);
     activityIndicator.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
     activityIndicator.layer.cornerRadius = 10;
     activityIndicator.hidesWhenStopped = YES;
