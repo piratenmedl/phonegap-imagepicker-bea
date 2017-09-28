@@ -152,7 +152,9 @@
                     }
                     if([fileExtension isEqualToString:@"jpg"]) {
                         UIImage* image = [UIImage imageWithCGImage:imgRef scale:1.0f orientation:orientation];
-                        thumbData = UIImageJPEGRepresentation(image, 75.0f/100.0f);
+                        //thumbData = UIImageJPEGRepresentation(image, 75.0f/100.0f); 
+                        thumbData = UIImageJPEGRepresentation(image, 100.0f/100.0f); //bea
+						
                     } else if([fileExtension isEqualToString:@"png"]) {
                         UIImage* image = [UIImage imageWithCGImage:imgRef scale:1.0f orientation:orientation];
                         thumbData = UIImagePNGRepresentation(image);
