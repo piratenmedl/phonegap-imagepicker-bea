@@ -12,7 +12,7 @@
 #import "ELCAssetTablePicker.h"
 
 #define CDV_PHOTO_PREFIX @"snw_photo_"
-
+ 
 @implementation SOSPicker
 
 @synthesize callbackId;
@@ -20,8 +20,8 @@
 - (void) getPictures:(CDVInvokedUrlCommand *)command {
 	NSDictionary *options = [command.arguments objectAtIndex: 0];
     NSInteger maximumImagesCount = [[options objectForKey:@"maximumImagesCount"] integerValue];
-    NSInteger total = [[options objectForKey:@"quality"] integerValue];
-    NSInteger vorh = [[options objectForKey:@"width"] integerValue];
+    NSInteger total = [[options objectForKey:@"total"] integerValue];
+    NSInteger vorh = [[options objectForKey:@"vorh"] integerValue];
     self.useOriginal = [[options objectForKey:@"useOriginal"] boolValue];
     self.createThumbnail = [[options objectForKey:@"createThumbnail"] boolValue];
     self.saveToDataDirectory = [[options objectForKey:@"saveToDataDirectory"] boolValue];
@@ -41,14 +41,17 @@
         albumController.immediateReturn = false;
         albumController.singleSelection = false;
     }
-    albumController.vorhImages = 15;
-    albumController.totalImages = 50;
+    //bea
+	albumController.vorhImages = vorh;
+    albumController.totalImages = total;
    
     ELCImagePickerController *imagePicker = [[ELCImagePickerController alloc] initWithRootViewController:albumController];
     imagePicker.maximumImagesCount = maximumImagesCount;
     imagePicker.returnsOriginalImage = 1;
     imagePicker.imagePickerDelegate = self;
-    
+    //imagePicker.totalImages = 15;
+    //imagePicker.vorhImages = 50;
+   
     albumController.parent = imagePicker;
     self.callbackId = command.callbackId;
     // Present modally
@@ -151,7 +154,9 @@
                     }
                     if([fileExtension isEqualToString:@"jpg"]) {
                         UIImage* image = [UIImage imageWithCGImage:imgRef scale:1.0f orientation:orientation];
-                        thumbData = UIImageJPEGRepresentation(image, 75.0f/100.0f);
+                        //thumbData = UIImageJPEGRepresentation(image, 75.0f/100.0f); 
+                        thumbData = UIImageJPEGRepresentation(image, 100.0f/100.0f); //bea
+						
                     } else if([fileExtension isEqualToString:@"png"]) {
                         UIImage* image = [UIImage imageWithCGImage:imgRef scale:1.0f orientation:orientation];
                         thumbData = UIImagePNGRepresentation(image);

@@ -74,7 +74,7 @@
             // Group Enumerator Failure Block
             void (^assetGroupEnumberatorFailure)(NSError *) = ^(NSError *error) {
                 
-                UIAlertView * alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:[NSString stringWithFormat:NSLocalizedString(@"Album Error: %@ - %@", nil), [error localizedDescription], [error localizedRecoverySuggestion]] delegate:nil cancelButtonTitle:NSLocalizedString(@"Ok", nil) otherButtonTitles:nil];
+                UIAlertView * alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:[NSString stringWithFormat:NSLocalizedString(@"Album Fehler: %@ - %@", nil), [error localizedDescription], [error localizedRecoverySuggestion]] delegate:nil cancelButtonTitle:NSLocalizedString(@"Ok", nil) otherButtonTitles:nil];
                 [alert show];
                 
                 NSLog(@"A problem occured %@", [error description]);	                                 
@@ -139,7 +139,8 @@
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@ (%ld)",[g valueForProperty:ALAssetsGroupPropertyName], (long)gCount];
     UIImage* image = [UIImage imageWithCGImage:[(ALAssetsGroup*)[self.assetGroups objectAtIndex:indexPath.row] posterImage]];
-    image = [self resize:image to:CGSizeMake(70, 70)];
+    //image = [self resize:image to:CGSizeMake(70, 70)];
+    image = [self resize:image to:CGSizeMake(120, 120)]; //bea
     [cell.imageView setImage:image];
 	[cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
 	
@@ -169,8 +170,8 @@
 	picker.assetPickerFilterDelegate = self.assetPickerFilterDelegate;
 	picker.immediateReturn = self.immediateReturn;
     picker.singleSelection = self.singleSelection;
-    picker.totalImages = self.totalImages;
-    picker.vorhImages = self.vorhImages;
+    picker.totalImages = self.totalImages; //bea
+    picker.vorhImages = self.vorhImages; //bea
 	
 	[self.navigationController pushViewController:picker animated:YES];
 }

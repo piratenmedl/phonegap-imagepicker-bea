@@ -28,7 +28,7 @@
     if (self) {
         //Sets a reasonable default bigger then 0 for columns
         //So that we don't have a divide by 0 scenario
-        self.columns = 4;
+        self.columns = 3;
         self.assetPadding = 2;
     }
     return self;
@@ -60,13 +60,15 @@
         self.flexSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                                                        target:nil
                                                                        action:nil];
-        self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
+        //self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
+        self.selectionCounter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, self.navigationController.toolbar.frame.size.height)]; //bea
         [self.selectionCounter setTextAlignment:NSTextAlignmentRight];
         [self.selectionCounter setTextColor:[UIColor grayColor]];
         [self updateCounter];
         
         UIButton *button =  [UIButton buttonWithType:UIButtonTypeSystem];
-        [button setFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
+        //[button setFrame:CGRectMake(0, 0, 100, self.navigationController.toolbar.frame.size.height)];
+        [button setFrame:CGRectMake(0, 0, 200, self.navigationController.toolbar.frame.size.height)];
         [button addSubview:self.selectionCounter];
         self.selectionCounterButton = [[UIBarButtonItem alloc]
                                            initWithCustomView:button];
@@ -92,7 +94,7 @@
 - (void)loadView {
     [super loadView];
     UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    activityIndicator.frame = CGRectMake(0, 0, 80, 80);
+    activityIndicator.frame = CGRectMake(0, 0, 120, 120);
     activityIndicator.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
     activityIndicator.layer.cornerRadius = 10;
     activityIndicator.hidesWhenStopped = YES;
@@ -110,7 +112,7 @@
 {
     [super viewWillAppear:animated];
     //self.columns = self.view.bounds.size.width / 80;
-    self.columns = 4;
+    self.columns = 3;
     self.assetPadding = 2;
     [self recalculateAssetDimension];
 }
@@ -124,7 +126,7 @@
 {
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
     //self.columns = self.view.bounds.size.width / 80;
-    self.columns = 4;
+    self.columns = 3;
     self.assetPadding = 2;
     [self recalculateAssetDimension];
     [self.tableView reloadData];    
@@ -183,10 +185,10 @@
 {
     //bea
 	if (self.vorhImages) 
-		NSInteger total = self.vorhImages-self.totalSelectedAssets;
-		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), total]];
+		//NSInteger fotos = self.vorhImages + self.totalSelectedAssets;
+		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d of 50", nil), (self.vorhImages + self.totalSelectedAssets)]];
 	else
-		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d", nil), self.totalSelectedAssets]];
+		[self.selectionCounter setText:[NSString stringWithFormat:NSLocalizedString(@"Chosen: %d of 50", nil), self.totalSelectedAssets]];
 }
 
 - (void)selectAllAction:(id)sender
@@ -293,7 +295,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (self.columns <= 0) { //Sometimes called before we know how many columns we have
-        self.columns = 4;
+        self.columns = 3;
     }
     NSInteger numRows = ceil([self.elcAssets count] / (float)self.columns);
     return numRows;
