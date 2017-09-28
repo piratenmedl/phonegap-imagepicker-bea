@@ -28,7 +28,7 @@
     if (self) {
         //Sets a reasonable default bigger then 0 for columns
         //So that we don't have a divide by 0 scenario
-        self.columns = 4;
+        self.columns = 3;
         self.assetPadding = 2;
     }
     return self;
@@ -112,7 +112,7 @@
 {
     [super viewWillAppear:animated];
     //self.columns = self.view.bounds.size.width / 80;
-    self.columns = 4;
+    self.columns = 3;
     self.assetPadding = 2;
     [self recalculateAssetDimension];
 }
@@ -126,7 +126,7 @@
 {
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
     //self.columns = self.view.bounds.size.width / 80;
-    self.columns = 4;
+    self.columns = 3;
     self.assetPadding = 2;
     [self recalculateAssetDimension];
     [self.tableView reloadData];    
@@ -295,7 +295,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (self.columns <= 0) { //Sometimes called before we know how many columns we have
-        self.columns = 4;
+        self.columns = 3;
     }
     NSInteger numRows = ceil([self.elcAssets count] / (float)self.columns);
     return numRows;
