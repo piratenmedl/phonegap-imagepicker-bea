@@ -114,7 +114,6 @@
     //self.columns = self.view.bounds.size.width / 80;
     self.columns = 3;
     self.assetPadding = 2;
-    self recalculateAssetDimension; //bea
     [self recalculateAssetDimension];
 }
 
