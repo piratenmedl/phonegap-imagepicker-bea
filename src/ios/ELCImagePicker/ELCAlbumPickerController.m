@@ -139,7 +139,8 @@
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@ (%ld)",[g valueForProperty:ALAssetsGroupPropertyName], (long)gCount];
     UIImage* image = [UIImage imageWithCGImage:[(ALAssetsGroup*)[self.assetGroups objectAtIndex:indexPath.row] posterImage]];
-    image = [self resize:image to:CGSizeMake(70, 70)];
+    //image = [self resize:image to:CGSizeMake(70, 70)];
+    image = [self resize:image to:CGSizeMake(120, 120)];
     [cell.imageView setImage:image];
 	[cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
 	
