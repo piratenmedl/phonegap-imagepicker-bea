@@ -111,8 +111,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    //self.columns = self.view.bounds.size.width / 80;
-    self.columns = 3;
+    self.columns = self.view.bounds.size.width / 80;
+    //self.columns = 3;
     self.assetPadding = 2;
     [self recalculateAssetDimension];
 }
@@ -125,8 +125,8 @@
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-    //self.columns = self.view.bounds.size.width / 80;
-    self.columns = 3;
+    self.columns = self.view.bounds.size.width / 80;
+    //self.columns = 3;
     self.assetPadding = 2;
     [self recalculateAssetDimension];
     [self.tableView reloadData];    
