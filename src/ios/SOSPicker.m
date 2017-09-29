@@ -122,12 +122,12 @@
                 
                 UIImage* image = [UIImage imageWithCGImage:imgRef scale:1.0f orientation:orientation];
                 if (self.width == 0 && self.height == 0) {
-                    data = UIImageJPEGRepresentation(image, 100.0f/100.0f); //bea
-                    //data = UIImageJPEGRepresentation(image, self.quality/100.0f); //bea
+                    //data = UIImageJPEGRepresentation(image, 100.0f/100.0f); //bea
+                    data = UIImageJPEGRepresentation(image, self.quality/100.0f); 
                 } else {
                     UIImage* scaledImage = [self imageByScalingNotCroppingForSize:image toSize:targetSize];
-                    data = UIImageJPEGRepresentation(scaledImage, 100.0f/100.0f); //bea
-                    //data = UIImageJPEGRepresentation(scaledImage, self.quality/100.0f); //bea
+                    //data = UIImageJPEGRepresentation(scaledImage, 100.0f/100.0f); //bea
+                    data = UIImageJPEGRepresentation(scaledImage, self.quality/100.0f); 
                 }
                 
                 fileExtension = @"jpg";
