@@ -13,12 +13,12 @@
         android:fadingEdgeLength="10dip"
         android:fastScrollEnabled="true"
         android:gravity="center"
-        android:horizontalSpacing="8dip"
+        android:horizontalSpacing="4dip"
         android:numColumns="4"
         android:requiresFadingEdge="vertical"
         android:scrollingCache="true"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="8dip" />
+        android:verticalSpacing="4dip" />
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:background="#fff3f3f3"
@@ -34,7 +34,7 @@
 
         <LinearLayout android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:layout_marginBottom="8dp"
             android:layout_width="fill_parent">
 
