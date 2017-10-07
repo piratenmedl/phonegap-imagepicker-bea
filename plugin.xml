@@ -7,7 +7,7 @@
 	<name>ImagePicker</name>
 	 
 	<description>
-		This plugin allows selection of multiple images from the camera roll / gallery in a phonegap app
+		Dieses Plugin erlaubt die Auswahl von mehreren Fotos
 	</description>
 	
 	<license>MIT</license>
@@ -22,6 +22,10 @@
 
 	<!-- ios -->
 	<platform name="ios">
+		<config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+			<string>$PHOTO_LIBRARY_USAGE_DESCRIPTION</string>
+		</config-file>
+		
 		<config-file target="config.xml" parent="/*">
 			<feature name="ImagePicker">
 				<param name="ios-package" value="SOSPicker"/>
