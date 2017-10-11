@@ -23,7 +23,7 @@
 	<!-- ios -->
 	<platform name="ios">
 		<config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
-			<string>Du markierst deine Fotos aus deinen Fotoalben und erstellst dein pixyfoto-booklet</string>
+			<string>Du markierst deine Fotos aus deinen Fotoalben und erstellst dein pixyfoto-booklet.</string>
 		</config-file>
 		
 		<config-file target="config.xml" parent="/*">
