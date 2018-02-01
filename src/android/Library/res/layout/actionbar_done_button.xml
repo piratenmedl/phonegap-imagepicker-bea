@@ -22,7 +22,7 @@
     style="?android:actionButtonStyle">
 
     <TextView
-        android:drawableLeft="@drawable/ic_action_done_light.png"
+        android:drawableLeft="@drawable-mdpi/ic_action_done_light"
         android:drawablePadding="8dp"
         android:gravity="center_vertical"
         android:id="@+id/actionbar_done_textview"
