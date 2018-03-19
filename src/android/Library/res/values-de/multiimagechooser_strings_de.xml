@@ -13,7 +13,7 @@
     <string name="done">OK</string>
     <string name="chosen">Ausgewählte Fotos: </string>
     <string name="processing">Die Bilder werden verarbeitet.</string>
-    <string name="processing_time">Das dauert einen kleinen Moment.</string>
+    <string name="processing_time">Das dauert 5-10 Sekunden.</string>
     <string name="max_1">Fertig!</string>
     <string name="max_2">Fotos</string>
     <string name="max_3">Du hast jetzt alle Fotos ausgewählt.</string>
